@@ -1,0 +1,14 @@
+Class KlinikaDB.Osoba [ Abstract ]
+{
+
+Property Imie As %String [ Required ];
+
+Property Nazwisko As %String [ Required ];
+
+Method pobierzImieNazwisko() As %String
+{
+	Set returnImieNazwisko = ..Imie_" "_..Nazwisko
+	Return returnImieNazwisko
+}
+
+}

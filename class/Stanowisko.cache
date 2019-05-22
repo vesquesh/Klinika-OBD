@@ -1,0 +1,8 @@
+Class KlinikaDB.Stanowisko Extends (%SerialObject, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor)
+{
+
+Property Tytul As %String [ Required ];
+
+Property PensjaPodstawowa As %Integer [ Required ];
+
+}

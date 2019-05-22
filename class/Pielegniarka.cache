@@ -1,0 +1,4 @@
+Class KlinikaDB.Pielegniarka Extends (%Persistent, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor, KlinikaDB.Pracownik)
+{
+
+}

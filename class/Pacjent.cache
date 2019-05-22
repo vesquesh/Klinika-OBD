@@ -1,0 +1,25 @@
+Class KlinikaDB.Pacjent Extends (%Persistent, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor, KlinikaDB.Osoba)
+{
+
+Property PESEL As %String;
+
+Property Schorzenie As %String;
+
+Property TerminZwolnienia As %Date;
+
+Method pobierzPESEL() As %String
+{
+			Return ..PESEL
+}
+
+Method pobierzSchorzenie() As %String
+{
+		Return ..Schorzenie
+}
+
+Method pobierzTerminZwolnienia() As %Date
+{
+		Return ..TerminZwolnienia
+}
+
+}

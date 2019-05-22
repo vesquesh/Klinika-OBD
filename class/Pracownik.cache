@@ -1,0 +1,17 @@
+Class KlinikaDB.Pracownik Extends KlinikaDB.Osoba
+{
+
+Property Pozycja As Stanowisko [ Required ];
+
+Method pobierzPensje() As %Integer
+{
+		Set pensja = ..Pozycja.PensjaPodstawowa
+		Return pensja
+}
+
+Method pobierzImieNazwisko() As %String
+{
+	Return ..Imie_" "_..Nazwisko
+}
+
+}

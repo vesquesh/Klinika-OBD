@@ -1,0 +1,8 @@
+Class KlinikaDB.Oddzial Extends (%Persistent, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor)
+{
+
+Property Specjalnosc As %String;
+
+Property NumerOddzialu As %Integer;
+
+}

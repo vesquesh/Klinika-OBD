@@ -1,0 +1,8 @@
+Class KlinikaDB.Sala Extends (%Persistent, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor)
+{
+
+Property LiczbaMiejsc As %Integer;
+
+Property OddzialSzpitalny As Oddzial [ Required ];
+
+}

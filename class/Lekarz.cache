@@ -1,0 +1,14 @@
+Class KlinikaDB.Lekarz Extends (%Persistent, %Populate, %XML.Adaptor, %ZEN.DataModel.Adaptor, KlinikaDB.Pracownik)
+{
+
+Property TytulNaukowy As %String;
+
+Property Specjalizacja As %String;
+
+Method pobierzImieNazwisko() As %String
+{
+	Set pelnaNazwa = ..TytulNaukowy_" "_..Imie_" "_..Nazwisko
+	Return pelnaNazwa
+}
+
+}
